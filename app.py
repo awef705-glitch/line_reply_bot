@@ -29,7 +29,7 @@ def initialize_gemini():
     """Gemini APIの初期化"""
     api_key = st.secrets["GEMINI_API_KEY"]
     genai.configure(api_key=api_key)
-    return genai.GenerativeModel('gemini-pro')
+    return genai.GenerativeModel('gemini-1.5-pro')
 
 
 @st.cache_resource
